@@ -1,9 +1,32 @@
 = reverse_captcha
 
-Description goes here.
+Simple reverse captcha solution that consist in create a hidden field that should be always empty. If you don't know reverse
+captcha aproach search on the internet.
+
+== Usage
+
+The gem is only compatible with Rails 3.0 (if you need a Rails 2.+ version send a pull request). Add it to your Gemfile:
+
+    gem 'reverse_captcha'
+
+After that you will be able to create a captcha attribute in your model (ActiveRecord only)
+
+
+    class Comment < ActiveRecord::Base
+      captcha :nickname
+    end
+
+Now in your view you should add a captcha field like below:
+
+    form_for @comment do |f|
+      ...
+      <%= f.captcha %>
+    end
+
+And that's it. If the nickname attribute is filled Rails will fail to save with a validation error.
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

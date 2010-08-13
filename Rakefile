@@ -5,12 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "reverse_captcha"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{simple solution for reverse captcha in Rails apps}
+    gem.description = %Q{Simple reverse captcha solution that consist in create a hidden field that should be always empty.}
     gem.email = "danielvlopes@gmail.com"
     gem.homepage = "http://github.com/danielvlopes/reverse_captcha"
     gem.authors = ["Daniel Lopes"]
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

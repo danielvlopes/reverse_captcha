@@ -7,4 +7,3 @@ module ReverseCaptcha
 
   end
 end
-
