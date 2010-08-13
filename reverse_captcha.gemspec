@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{reverse_captcha}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel Lopes"]
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "lib/reverse_captcha.rb",
      "lib/reverse_captcha/model.rb",
      "lib/reverse_captcha/view.rb",
+     "reverse_captcha.gemspec",
      "test/schema.rb",
      "test/support/comment.rb",
      "test/support/mock_controller.rb",
